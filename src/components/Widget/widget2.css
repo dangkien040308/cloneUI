@@ -1,0 +1,46 @@
+.circleCustom {
+   width: 160px;
+   height: 160px;
+   border-radius: 100rem;
+   background : conic-gradient(
+      #3F3BF2 40% ,
+      #818CF8 40% ,
+      #818CF8 80% ,
+      #A5B4FC 80% ,
+      #A5B4FC 85% ,
+      #C7D2FE 85%
+   );
+   position: relative;
+}
+.circleCustom:after {
+  content: '';
+  position: absolute;
+  top : 50% ;
+  left : 50% ;
+  transform: translate(-50%,-50%);
+  width: 115px;
+  height: 115px;
+  background-color: #0B0420 ;
+  border-radius: 100rem ;
+}
+.circleCustom:before {
+  content: '314';
+  position: absolute;
+  top : 48% ;
+  left : 50% ;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  z-index: 11;
+  font-size: 25px;
+}
+.childCircleCustom {
+  position: absolute;
+  top : 63% ;
+  left : 50% ;
+  transform: translate(-50%,-50%);
+  width: 48px;
+  height: 10px;
+  border-radius: 20px;
+  background-color: #241E37;
+  z-index: 11;
+}
